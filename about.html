@@ -1,0 +1,176 @@
+<html>
+    <header>
+        <title>
+            Fitness Fort Gym
+        </title>
+    </header>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Manrope', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Barlow', sans-serif;
+            font-size: 16px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        body {
+            background-color: #101010;
+            color: #DDDDDD;
+            min-height: 100vh;
+        }
+        .main {
+            background-color: #DDDDDD;
+            color: #1d1d1d;
+        }
+        .nav {
+            background-color: #101010;
+            color: #DDDDDD;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1;
+        }
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        .right-container {
+            display: flex;
+            align-items: center;
+        }
+        .dropdown {
+            margin-left: 20px;
+        }
+        .dropdown a {
+            color: #DDDDDD;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .dropdown a:hover {
+            color: #2EC027;
+        }
+        .overlay {
+            background-color: #101010;
+            min-height: 100vh;
+            padding: 80px 20px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        h1 {
+            font-size: 3.5rem;
+            color: #2EC027;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #DDDDDD;
+            font-weight: 400;
+        }
+        .section {
+            background-color: #1d1d1d;
+            padding: 40px;
+            border-radius: 16px;
+            border: 2px solid #2EC027;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            max-width: 800px;
+            width: 90%;
+            margin: 30px auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+        }
+        .section h2 {
+            margin-bottom: 16px;
+            color: #2EC027;
+        }
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        footer {
+            background-color: #1d1d1d;
+            color: #aaa;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .section {
+                padding: 25px;
+            }
+        }
+    </style>
+    <body>
+        <div class="nav">
+            <div class="logo">
+                <a href="main.html"><img src="https://assets.onecompiler.app/436vmj5t6/43eduasuy/logo.png" style="height: 50px; width: auto;"></a>
+            </div>
+            <div class="right-container">
+                <div class="dropdown"><a href="about.html">About</a></div>
+                <div class="dropdown"><a href="what we do.html">What we do</a></div>
+                <div class="dropdown"><a href="activities.html">Activities</a></div>
+                <div class="dropdown"><a href="contacts.html">Contact us</a></div>
+                <div class="dropdown"><a href="news-and-events.html">Events and news</a></div>
+                <div class="dropdown"><a href="developers.html">Developers</a></div>
+            </div>
+        </div>
+        <div class="overlay">
+            <header>
+              <h1>All About Fitness Fort</h1>
+            </header>
+        
+            <section class="section">
+              <h2>HISTORY</h2>
+              <p>The Fitness Fort Gym was founded in 2022 by an individual passionate about making fitness fun, inclusive, and accessible to all. Starting with a simple space and a clear vision, the goal was to create an environment where people could work out, improve their well-being, and feel part of a community.</p><br>
+        
+              <p>Over time, the gym grew in size and reputation, becoming a local hub where members not only reach their fitness goals but also connect and support one another. Despite its growth, The Fitness Fort remains grounded in its original vision, offering a space driven by passion and a sense of belonging.</p>
+            </section>
+        
+            <section class="section">
+              <h2>NATURE</h2>
+              <p>The Fitness Fort Gym is a modern fitness facility that blends traditional workout spaces with a community-driven approach.</p><br>
+              <p>We offer a variety of high-quality equipment, diverse fitness classes, and personalized training programs to cater to the unique needs of our members. Our focus is not just on physical fitness, but on promoting overall well-being, mental resilience, and a sense of belonging within a motivating and supportive atmosphere.</p>
+            </section>
+        
+            <section class="section">
+              <h2>MISSION</h2>
+              <p>Our mission is to provide a welcoming, inclusive, and supportive environment where individuals of all fitness levels can achieve their health and wellness goals. </p>
+            </section>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Fort Gym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    
+    body, html {
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Barlow', sans-serif;
+    }
+
+    .splash {
+      background: url("https://assets.onecompiler.app/436vmj5t6/43eduasuy/splashbg.jpg") no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      animation: fadeIn 2s ease-in;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .content {
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 1rem;
+    }
+
+    .btn {
+      background: #32cd32;
+      padding: 0.8rem 2rem;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: background 0.3s;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn:hover {
+      background: #28a428;
+    }
+
+    .team {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .team span {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+  </style>
+</head>
+<body>
+  <section class="splash">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Fitness Fort Gym</h1>
+      <p>Your journey to strength and health starts here. Join us and transform your lifestyle today.</p>
+      <a href="main.html" class="btn">explore now</a>
+      <div class="team">
+        <span><strong>Delos Santos, Charmain Joy</strong> – Splash page, activities, news & events</span>
+        <span><strong>Reyes, Sean Elijah</strong> – main page, about, what we do, Members, contant & address, developers page</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
